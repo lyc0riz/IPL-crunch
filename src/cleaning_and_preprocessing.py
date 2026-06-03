@@ -102,6 +102,7 @@ def clean_ipl_data(df):
     df = df.copy() 
     
     df = standardize_cities(df)
+    df = standardize_venues(df)
     df = standardize_teams(df)
     df = format_dates_and_sort(df)
     df = handle_missing_values(df)
